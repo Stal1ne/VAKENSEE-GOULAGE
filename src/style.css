@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+.text-centered {
+  text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  background: rgba(255, 0, 0, 0.8);
+  border-radius: 5px;
+  display: block;
+  width: fit-content;
+  margin: 5px;
+  transition: transform 0.2s cubic-bezier(1, 0, 1, 2);
+}
+a:hover {
+  transform: scale(1.05);
+}
+a:active {
+  transform: scale(0.95);
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.rgb {
+  animation: rgb 10s infinite;
+}
+.selected {
+  background: rgb(128, 0, 0);
+  font-weight: 700;
+}
+
+@keyframes rgb {
+  0% {
+      filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+h1 {
+  text-align: center;
+  color: red;
+}
+.test {
+  text-decoration: none;
+  color: aqua;
+  background-color: black;
+  display: block;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+}
+/*
+    .rouge
+
+    p
+    .rouge
+    #haut
+
+    p.rouge -> Prend tous les paragraphe avec la class rouge
+
+    nav a -> Prend tous les elements qui des a dans la nav
+*/
