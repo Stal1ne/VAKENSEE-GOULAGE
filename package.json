@@ -1,0 +1,22 @@
+{
+  "name": "goulag",
+  "version": "1.0.0",
+  "description": "C'est le meilleur site au monde",
+  "author": "Staline",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.16",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.4.6"
+  },
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  }
+}
