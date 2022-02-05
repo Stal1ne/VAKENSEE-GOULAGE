@@ -18,7 +18,17 @@ function watch(cb) {
 }
 
 function html(cb) {
-  gulp.src("./src/**/*.html").pipe(htmlmin()).pipe(gulp.dest("./dist/"));
+  gulp
+    .src("./src/**/*.html")
+    .pipe(
+      htmlmin({
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        removeTagWhitespace: true,
+      })
+    )
+    .pipe(gulp.dest("./dist/"));
   cb();
 }
 
